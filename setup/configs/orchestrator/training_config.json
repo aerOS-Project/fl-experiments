@@ -1,0 +1,57 @@
+{
+  "model_name": "migration_predictor",
+  "model_version": "v1",
+  "model_id": "migration_predictor_v1",
+  "strategy": "fedavg",
+  "min_fit_clients": 1,
+  "min_available_clients": 1,
+  "min_eval_clients": 1,
+  "number_of_rounds": 20,
+  "stopping_flag": false,
+  "stopping_target": {"accuracy": "0.95"},
+  "adapt_config": "base",
+  "status": "PENDING",
+  "checked": "true",
+  "configuration_id": 1,
+  "meta": {},
+  "eval_metrics": "accuracy",
+  "client_type_id": "local1",
+  "server_address": "fl-training-collector",
+  "eval_func": "binary_crossentropy",
+  "num_classes": 2,
+  "shape": [13],
+  "config": [
+    {
+      "config_id": "standard",
+      "batch_size": "32",
+      "steps_per_epoch": "32",
+      "epochs": "5",
+      "learning_rate": "0.001"
+    }
+  ],
+  "optimizer_config": {
+    "optimizer": "adam",
+    "learning_rate": "0.001",
+    "amsgrad": "True",
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "epsilon": 1e-07
+  },
+  "scheduler_config": {
+    "scheduler": "reducelronplateau",
+    "factor": "0.5",
+    "patience": 3,
+    "min_delta": "0.001"
+  },
+  "warmup_config": {
+    "scheduler": "lambdalr",
+    "warmup_iters": "1000",
+    "warmup_epochs": "1",
+    "warmup_factor": "0.001",
+    "scheduler_conf": {
+      "scheduler": "lambdalr"
+    }
+  },
+  "privacy-mechanisms": {},
+  "encryption": []
+}

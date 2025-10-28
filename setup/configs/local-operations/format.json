@@ -1,0 +1,20 @@
+{
+    "x": {
+        "data_types": {
+            "tabular": {
+                "size": [
+                    13
+                ]
+            }
+        }
+    },
+    "y": {
+        "data_types": {
+            "binary": {
+                "size": [
+                    1
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "model_name": "migration_predictor",
+    "model_version": "v1",
+    "training_id": "25",
+    "results": {
+      "rounds": "20",
+      "final_loss": "2629.87255859375",
+      "accuracy": 0.46070865273475647,
+      "min_fit_clients": 1,
+      "min_evaluate_clients": 1,
+      "min_available_clients": 1
+    },
+    "weights_id": "68dfe1e12316ef418ef50764",
+    "configuration_id": "78"
+}
